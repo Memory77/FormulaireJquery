@@ -1,12 +1,57 @@
-body{
-    background-color: rgb(92, 92, 92);
-
+form{
+    background-color: #555;
+    padding: 20px 30px;
+    border-radius: 20px;
     h1{
-       font-family: 'Flaticon', sans-serif; 
+        font-size: 40px;
+    }
+    h1, h2{
+        font-family: 'Flaticon', sans-serif;
+    }
+    h1, input[type="submit"] {
+        
+        font-weight: bold; /* mettre en gras */
+        background: linear-gradient(to bottom, #89f35f, #27680b); /* dégradé de couleur du rouge au bleu de haut en bas */
+        -webkit-background-clip: text; /* appliquer le dégradé à la couleur du texte */
+        -webkit-text-fill-color: transparent; /* rendre la couleur du texte transparente pour afficher le dégradé */
     }
 
-    p{
-        font-family: 'themify', sans-serif; 
+    h2, p{
+        color: white;
     }
     
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2%;
+    width: 450px;
+
+    input, textarea, select{
+        background-color: #f7f7f7;
+        border: none;
+        box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        font-size: 16px;
+        color: #555;
+        }
+        
+        input, textarea, select{
+        outline: none;
+        box-shadow: inset 0px 5px 3px rgba(0, 0, 0, 0.2);
+        }
+        .short_input{
+        width: 70%;
+        }
+
+        input[type="submit"]{
+        border: none;
+        cursor: pointer; 
+        background-color: transparent;
+        box-shadow: none;
+        font-size: 30px;
+        }
 }
+   
+    

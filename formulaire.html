@@ -5,18 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire de contact</title>
+    <!-- css -->
     <link rel="stylesheet" href="sass/main.css">
-
-    <!-- import des icons -->
+    <!-- icons -->
     <link rel="stylesheet" href="icons/flaticons.css">
     <link rel="stylesheet" href="icons/themify-icons.css">
-
-    <!-- import de la librairie Jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <form id="contact_form">
-
+    <form id="contact-form" action="traitement-email.php" method="post">
+        <h1><span class="flaticon-phone"></span> 03 38 76 55 90</h1>
+        <h2><span class="flaticon-envelope"></span> Un besoin, une demande ?</h2>
+        <input type="text" placeholder="Entreprise *" name="entreprise" id="entreprise" required>
+        <input type="text" placeholder="Nom *" name="nom" id="nom" required>
+        <input type="text" placeholder="Prénom *" name="prenom" id="prenom" required>
+        <input type="text" placeholder="Fonction" name="fonction" id="fonction">
+        <input type="tel" placeholder="Tél *" id="telephone" name="telephone" required>
+        <input type="email" id="email" name="email" placeholder="Mail *" required>
+        <label for="demande"><p>Votre demande concerne *</p></label>
+        <select name="demande" id="demande" class="short_input" required>
+            <option value="information">Information</option>
+            <option value="devis">Devis</option>
+            <option value="depannage">Dépannage</option>
+            <option value="commande">Commande</option>
+        </select>
+        <label for="contenu"><p>Votre besoin (objectifs, date, lieu) *</p></label>
+        <textarea cols="20" rows="3" name="contenu" id="contenu" required></textarea>
+        <input type="submit" value="GO !">
     </form>
+
+    <!-- jquery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <!-- custom js -->
+    <script src="custom.js"></script>
 </body>
 </html>
