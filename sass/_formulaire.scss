@@ -1,7 +1,9 @@
 form{
+
     background-color: #555;
     padding: 20px 30px;
     border-radius: 20px;
+
     h1{
         font-size: 40px;
     }
@@ -9,7 +11,6 @@ form{
         font-family: 'Flaticon', sans-serif;
     }
     h1, input[type="submit"] {
-        
         font-weight: bold; /* mettre en gras */
         background: linear-gradient(to bottom, #89f35f, #27680b); /* dégradé de couleur du rouge au bleu de haut en bas */
         -webkit-background-clip: text; /* appliquer le dégradé à la couleur du texte */
@@ -35,23 +36,27 @@ form{
         padding: 10px;
         font-size: 16px;
         color: #555;
-        }
-        
-        input, textarea, select{
+    }
+
+    label{
+        color: #fff;
+    }
+    
+    input, textarea, select{
         outline: none;
         box-shadow: inset 0px 5px 3px rgba(0, 0, 0, 0.2);
-        }
-        .short_input{
-        width: 70%;
-        }
+    }
+    .short_input{
+            width: 70%;
+    }
 
-        input[type="submit"]{
+    input[type="submit"]{
         border: none;
         cursor: pointer; 
         background-color: transparent;
         box-shadow: none;
         font-size: 30px;
-        }
+    }
 }
    
     

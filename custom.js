@@ -60,6 +60,9 @@ $("#contact-form").validate({
             required: "Vous devez renseigner votre adresse e-mail",
             email: "L'adresse e-mail doit être valide"
         },
+        demande: {
+            required: "Vous devez renseigner la demande",
+        },
         contenu: {
             required: "Vous devez renseigner votre message",
             minlength: "Le message doit comporter 10 caractères minimum"

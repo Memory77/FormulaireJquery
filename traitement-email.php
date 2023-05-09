@@ -11,7 +11,7 @@ if($_POST) {
     $contenu = $_POST['contenu'];
     
     // concaténation des différentes variables pour l'envoi
-    $to = "cyprien.prouvot@gmail.com";
+    $to = "cyprien.prouvot@hotmail.com";
     $subject = "Vous avez reçu un message depuis votre site web";
     $message = "Nom : ".$nom."\r\n";
     $message .= "Prénom : ".$prenom."\r\n";
@@ -23,7 +23,7 @@ if($_POST) {
     $headers = "From: ".$nom." <".$email.">\r\n";
     $headers .= "Reply-To: ".$email."\r\n";
     
-    /* envoi de l'email par la fonction php mail() */
+    // envoi de l'email par la fonction php mail() 
     if(mail($to, $subject, $message, $headers)) {
       echo "Votre message a été envoyé avec succès.";
     } else {
